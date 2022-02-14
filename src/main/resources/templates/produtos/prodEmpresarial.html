@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html  lang="pt-br" xmlns="http://thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link th:href="@{/css/estilo.css}" rel="stylesheet" />
+		<title>East Computer Soluções em Informática</title>
+	</head>
+	<body>
+
+		<div id="holder">
+<!--cabeçalho-->
+<nav class="navbar">
+		<div id="header">
+logo e informacoes principais da east computer<br>
+<!--links de topo-->
+			<a href="#" class="botaosanduiche" id="botaosanduiche">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>	
+			</a>
+
+			<div class="secaobotoescabecalho">
+			
+				<div class="botoescabecalho"><a class="textobotoescabecalho" href="Produtosdomesticos.html">Para casa</a></div>
+				<div class="botoescabecalho"><a class="textobotoescabecalho" href="Produtosempresariais.html">Para trabalho</a></div>
+				<div class="botoescabecalho"><a class="textobotoescabecalho" href="Suporte.html">Suporte</a></div>
+				<div class="botoescabecalho"><a class="textobotoescabecalho" href="custom.html">Especiais</a></div>
+				<div class="botoescabecalho" onclick="trocartema()"><a class="textobotoescabecalho">trocar tema</a></div>
+			</div>
+		</div>
+</nav>
+<!--essas quebras são necessárias por enquanto para manter o layout-->
+<br><br><br><br><br><br><br><br>
+<!--fim cabeçalho-->
+
+<!--conteúdo-->
+
+<h1>Estações de Trabalho</h1><br>
+<h1>Soluções de alto desempenho</h1><br>
+<h1>Servidores de datacenter</h1><br>
+
+
+<!--rodapé-->
+<!--essas quebras são necessárias por enquanto para manter o layout-->
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<footer id="footer">
+			<div class="divisoesrodape">informacoes de contato e endereco</div>
+			<div class="divisoesrodape">links seções do site</div>
+			<div class="divisoesrodape">Links sites terceiros</div>
+			<div class="divisoesrodape">outros</div>
+		</footer>
+
+<!--fim rodapé-->
+	</div>
+<!--scripts-->
+		<script th:href="@{/javascript/main.js}"></script>
+<!--fim scripts--> 
+	</body>
+</html>

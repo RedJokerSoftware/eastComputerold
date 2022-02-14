@@ -1,0 +1,189 @@
+body{
+	background-color:#212121;
+	height: 100%;
+	color:#cccccc;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:visited {
+   	color:#aaaaaa;
+}
+
+a:link {
+   	color:#aaaaaa;
+}
+
+#header{
+	background-color:#191919;
+	color:#aaaaaa;
+	height:150px;
+	width:100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	transition: 0.2s;
+	display: inline-block;
+}
+.navbar{
+	display: flex;
+	position: relative;
+	
+}
+.botaosanduiche{
+position: absolute;
+top: .75rem;
+right: 1rem;
+display: none;
+flex-direction: column;
+justify-content: space-between;
+width: 30px;
+height: 21px;
+}
+
+.botaosanduiche .bar{
+	height: 3px;
+	width: 100%;
+	background-color: white;
+	border-radius: 10px;
+}
+
+@media(max-width: 768px){
+	.botaosanduiche{
+		display: flex;
+	}
+	.secaobotoescabecalho{
+		height:30px;
+		display: none;
+		
+	}
+	.secaobotoescabecalho div{
+		width: 100%;
+		flex-direction: column;
+	}
+
+
+	.secaobotoescabecalho.active{
+	
+		display: flex;
+		flex-direction: column;
+	}
+
+	.botoescabecalho{	
+		width:100%;
+		text-align: center;
+		padding: .5rem 1 rem;
+	}
+
+	.navbar{
+		flex-direction: column;
+		align-item:flex-start;	
+	}
+
+
+	#header{
+		
+		height:100px;
+	}
+
+}
+.secaobotoescabecalho{
+	position: absolute;
+	bottom: 0;
+	width:100%
+
+}
+.botoescabecalho{
+	float:left;
+	width:20%;
+	height:30px;
+	background-color:#333333;
+	transition-duration: 0.4s;
+}
+
+.botoescabecalho:hover{
+	background-color:#5555ff;
+}
+
+.textobotoescabecalho{
+	display: block;
+	height: 100%;
+	text-align: center;
+	vertical-align: middle;
+	color:#ccccff;
+}
+
+
+
+.textocorpo{
+
+}
+
+
+.button{
+	background-color:#414151;
+	color:#ffffff;
+	border-radius: 2px;
+	transition-duration: 0.4s;
+	width: 100%;
+	border: 1px solid green;
+	padding-top:20%;
+	padding-bottom:20%;
+}
+
+.button:hover{
+	background-color:#000000;
+}
+
+#footer{
+	height:200px;
+	width:100%;
+	background-color:#111111;
+	color:#ffffff;
+	left: 0;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.divisoesrodape{
+	float:left;
+	width:25%;
+	height:100%
+	padding:2%;
+	font-size:16px;
+}
+
+#holder{
+	position:relative;
+	left: 0;
+	right: 0;
+}
+
+.lightmode {
+  background-color: #fafafa;
+  color: black;
+}
+
+#cadcliente{
+	background-color:#333333;
+	color:#aaaaaa;
+	width:70%;
+	padding:2%;
+	font-size:2vw;
+	align:center;
+}
+
+input{
+	background-color:#555555;
+	color:#cccccc;
+	padding:1%;
+	border:1px solid;
+	font-size:1.7vw;
+}
+input:disabled {
+  background: #808080;
+  color:#000000;
+}
